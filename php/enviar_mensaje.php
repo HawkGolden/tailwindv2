@@ -1,5 +1,5 @@
 <?php
-include("/php/con_db.php");
+include("php/con_db.php");
 
 if (isset ($_POST['enviar'])) {
     if (strlen($_POST['email'])  >= 1 && strlen($_POST['mensaje']) >= 1) {
