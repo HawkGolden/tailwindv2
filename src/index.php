@@ -196,11 +196,11 @@
                     </div>
                 </form>
                 <?php 
-                    include("php/enviar_mensaje.php");
+                    include("/opt/lampp/htdocs/tailwindv2/php/enviar_mensaje.php");
                 ?>
             </div>
         </section>
-        
+		
         <footer class="mt-4 bg-white py-8 border-gray-800 border-solid border-t-8 border-b-2 border-l-2 border-r-2">
             <div class="container mx-auto px-4">
                 <p class="text-center text-gray-800">© 2023 Todos los derechos reservados. Landing Page Tailwind CSS.</p>

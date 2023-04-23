@@ -1,6 +1,6 @@
 <?php
-include("php/con_db.php");
-
+    include("/opt/lampp/htdocs/tailwindv2/php/con_db.php");
+    
 if (isset ($_POST['enviar'])) {
     if (strlen($_POST['email'])  >= 1 && strlen($_POST['mensaje']) >= 1) {
         $email = trim($_POST['email']);
@@ -10,21 +10,17 @@ if (isset ($_POST['enviar'])) {
         
         if ($resultado){
 
-                ?>
-                <h3>Mensaje enviado.</h3>
-                <?php
+            ?>
+            <h3>Mensaje enviado.</h3>
+            <?php
 
         } else {
             ?>
             <h3> Ha ocurrido un error.</h3>
             <?php
         
-        } 
-    }   else {
-        ?>
-        <h3> Complete todos los campos.</h3>
-        <?php
-    }    
+               } 
+    }      
 }
 
 ?>
