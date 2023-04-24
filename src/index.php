@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/dist/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.9/dist/tailwind.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
 
     <body class="bg-gray-800">
@@ -112,8 +114,8 @@
         <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
             <div class="container mx-auto px-4">
                 <ul class="list-none">
-                    <li class="bg-center bg-gray-50 p-8 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                        <div class="flex items-center justify-center h-full">
+                    <li class="bg-center bg-gray-50 p-12 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                        <div class="flex items-center justify-center h-full mb-6">
                             <section class="text-center">
                                 <h3 class="text-3xl font-semibold text-gray-800">Texto demostrativo</h3>
                                 <p class="text-gray-800">Descripción del texto demostrativo</p>
@@ -127,43 +129,68 @@
                 </ul>
             </div>
         </section>
-        
-        <section class="bg-gray-800 py-8">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-semibold text-white text-center mb-8 my-6">Nuestros Miembros del Equipo</h2>
-                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    <li class="bg-white p-4 rounded shadow-md transform transition duration-300 ease-in-out hover:scale-105 relative">
-                        <img class="w-24 h-32 absolute top-1/2 transform -translate-y-1/2 right-0 rounded-full" src="/img/24*24fb.png" alt="Miembro del Equipo 6">
-                        <h3 class="text-xl font-bold text-gray-800">Nombre del Miembro 1</h3>
-                        <p class="text-gray-600 mt-2">Cargo del Miembro 1</p>
-                    </li>    
-                    <li class="bg-white p-4 rounded shadow-md transform transition duration-300 ease-in-out hover:scale-105 relative">
-                        <img class="w-24 h-32 absolute top-1/2 transform -translate-y-1/2 right-0 rounded-full" src="/img/24*24fb.png" alt="Miembro del Equipo 6">
-                        <h3 class="text-xl font-bold text-gray-800">Nombre del Miembro 2</h3>
-                        <p class="text-gray-600 mt-2">Cargo del Miembro 2</p>
-                    </li>    
-                    <li class="bg-white p-4 rounded shadow-md transform transition duration-300 ease-in-out hover:scale-105 relative">
-                        <img class="w-24 h-32 absolute top-1/2 transform -translate-y-1/2 right-0 rounded-full" src="/img/24*24fb.png" alt="Miembro del Equipo 6">
-                        <h3 class="text-xl font-bold text-gray-800">Nombre del Miembro 3</h3>
-                        <p class="text-gray-600 mt-2">Cargo del Miembro 3</p>
-                    </li>    
-                    <li class="bg-white p-4 rounded shadow-md transform transition duration-300 ease-in-out hover:scale-105 relative">
-                        <img class="w-24 h-32 absolute top-1/2 transform -translate-y-1/2 right-0 rounded-full" src="/img/24*24fb.png" alt="Miembro del Equipo 6">
-                        <h3 class="text-xl font-bold text-gray-800">Nombre del Miembro 4</h3>
-                        <p class="text-gray-600 mt-2">Cargo del Miembro 4</p>
-                    </li>    
-                    <li class="bg-white p-4 rounded shadow-md transform transition duration-300 ease-in-out hover:scale-105 relative">
-                        <img class="w-24 h-32 absolute top-1/2 transform -translate-y-1/2 right-0 rounded-full" src="/img/24*24fb.png" alt="Miembro del Equipo 6">
-                        <h3 class="text-xl font-bold text-gray-800">Nombre del Miembro 5</h3>
-                        <p class="text-gray-600 mt-2">Cargo del Miembro 5</p>
-                    </li>    
-                    <li class="bg-white p-4 rounded shadow-md transform transition duration-300 ease-in-out hover:scale-105 relative">
-                        <img class="w-24 h-32 absolute top-1/2 transform -translate-y-1/2 right-0 rounded-full" src="/img/24*24fb.png" alt="Miembro del Equipo 6">
-                        <h3 class="text-xl font-bold text-gray-800">Nombre del Miembro 6</h3>
-                        <p class="text-gray-600 mt-2">Cargo del Miembro 6</p>
-                    </li>                                                        
-                </ul>
+       
+        <section>
+         <div class="bg-gray-800 text-white py-48 w-3/4 mx-auto">
+         <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl text-center font-semibold mb-6">¡Aumenta las vistas mes a mes!</h2>
+         </div>
+         </div>
+        </section>
+
+        <section class="bg-gray-800 mb-8">
+        <div class="w-3/4">
+        <canvas id="myChart" width="400" height="130"></canvas>
+
+        </div>
+
+        <script src="/javascript/chart1.js"></script>
+
+        </section>
+
+        <section class="bg-gray-800 text-white py-24">
+            <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl text-center font-semibold mb-6">Nuestro Equipo</h2>
             </div>
+        </section> 
+
+        <section class="flex flex-wrap justify-center">
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-32 object-cover" src="/img/user100*100.png" alt="Imagen del miembro">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold text-center">Nombre del Miembro</h3>
+                <p class="text-gray-600 text-center">Cargo</p>
+            </div>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-32 object-cover" src="/img/user100*100.png" alt="Imagen del miembro">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold text-center">Nombre del Miembro</h3>
+                <p class="text-gray-600 text-center">Cargo</p>
+            </div>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-32 object-cover" src="/img/user100*100.png" alt="Imagen del miembro">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold text-center">Nombre del Miembro</h3>
+                <p class="text-gray-600 text-center">Cargo</p>
+            </div>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-32 object-cover" src="/img/user100*100.png" alt="Imagen del miembro">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold text-center">Nombre del Miembro</h3>
+                <p class="text-gray-600 text-center">Cargo</p>
+            </div>
+            </div>
+        </div>
         </section>
 
         <section class="bg-gray-800 text-white py-24">
